@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Agroveterinaria - Bienvenidos</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Agroveterinaria</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Productos</a></li>
+				<li><a href="#">Servicios</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img1.jpg"></div>
+				<div class="swiper-slide"><img src="img2.jpg"></div>
+				<div class="swiper-slide"><img src="img3.png"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</section>
+		<section>
+			<h2>Nuestros productos</h2>
+			<ul>
+				<li>Alimentos para animales</li>
+				<li>Medicamentos veterinarios</li>
+				<li>Productos de jardinería</li>
+				<li>Equipos de riego</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>Agroveterinaria - Todos los derechos reservados</p>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+	</script>
+</body>
+</html>
